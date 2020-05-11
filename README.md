@@ -10,7 +10,7 @@ Puedes acceder a él a través de este enlace: https://celiavelmar.github.io/ope
 
 Ante las críticas, la Comunidad de Madrid ha actualizado el Aviso de Privacidad de la aplicación (22/03/2020): [La Comunidad de Madrid modifica el aviso de privacidad de su app móvil para COVID-19: amplía las finalidades de uso de los datos y cuándo los anonimiza](https://maldita.es/malditatecnologia/2020/03/24/aplicacion-madrid-coronavirus-oficial-comparte-datos-empresas/)
 
-### Ingeniería inversa
+### Algorithme
 
 Haciendo un poco de "ingeniería inversa" me he topado con el enrevesado algoritmo para el que se ha necesitado la colaboración de, al menos, seis multinacionales (según consta en la propia web de la aplicación): Google, Telefónica, Goggo Network, Ferrovial, Carto, Forcemanager y Mendesaltren.
 
