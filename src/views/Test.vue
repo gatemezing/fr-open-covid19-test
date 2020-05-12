@@ -2,44 +2,44 @@
   <div class="test">
     <div class="margin-container"></div>
     <div>
-      <h2>Evalúa tus síntomas</h2>
+      <h2>Evaluez vos symptômes</h2>
       <form @submit.prevent="getEvaluation">
         <radio-question
-          question="¿Tienes sensación de falta de aire de inicio brusco (en ausencia de cualquier otra patología que justifique este síntoma)?"
+          question="Avez-vous une sensation de manque de souffle d'origine brusque? (en absence d'une autre patologie qui justifierait ce symptôme)?"
           name="airShortness"
         ></radio-question>
         <radio-question
-          question="¿Tienes fiebre? (+37.7ºC)"
+          question="Avez-vous la fiebre? (+37.7ºC)"
           name="fever"
         ></radio-question>
         <radio-question
-          question="¿Tienes tos seca y persistente?"
+          question="Avez-vous une toux seche et persistante?"
           name="dryCough"
         ></radio-question>
         <radio-question
-          question="¿Has tenido contacto estrecho con algún paciente positivo confirmado?"
+          question="Avez-vous été en contact avec un patien positif confirmé?"
           name="closeContact"
         ></radio-question>
         <radio-question
-          question="¿Tienes mucosidad en la nariz?"
+          question="Avez-vous de la glaire dans le nez?"
           name="mucus"
         ></radio-question>
         <radio-question
-          question="¿Tienes dolor muscular?"
+          question="Avez-vous des douleurs musculaires?"
           name="muscularPain"
         ></radio-question>
         <radio-question
-          question="¿Tienes sintomatología gastrointestinal?"
+          question="Avez-vous des problemes gastro intestinaux?"
           name="gastrointestinal"
         ></radio-question>
         <radio-question
-          question="¿Llevas más de 20 días con estos síntomas?"
+          question="Avez-vous plus de 20 jours avec ces symptômes?"
           name="twentyDays"
         ></radio-question>
         <div class="right">
-          <router-link class="back" to="/">Volver</router-link>
+          <router-link class="back" to="/">Retourner</router-link>
           <button type="submit">
-            Obtener resultados
+            Obtenir les resultats
           </button>
         </div>
       </form>
