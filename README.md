@@ -1,31 +1,25 @@
-# Open COVID19 Test
+# Open COVID19 Test en FR
 
-Un test de autoevaluación para el COVID-19 de código abierto que devuelve los mismos resultados que [coronamadrid.com](https://www.coronamadrid.com/) pero no almacena tus valiosos datos.
+Un test d'auto evaluation pour le COVID-19 en open source qui donnent les memes resultats que le site [coronamadrid.com](https://www.coronamadrid.com/) sans conserver tes precieux donnees personnelles.
 
-Puedes acceder a él a través de este enlace: https://celiavelmar.github.io/open-covid19-test/
+Version originale en Castellan: https://celiavelmar.github.io/open-covid19-test/
 
-### Aplicación de la Comunidad de Madrid
-
-[La aplicación de autoevaluación de la Comunidad de Madrid para COVID-19: es oficial, da acceso a tus datos a empresas privadas y no los anonimiza](http://archive.is/k5x1L)
-
-Ante las críticas, la Comunidad de Madrid ha actualizado el Aviso de Privacidad de la aplicación (22/03/2020): [La Comunidad de Madrid modifica el aviso de privacidad de su app móvil para COVID-19: amplía las finalidades de uso de los datos y cuándo los anonimiza](https://maldita.es/malditatecnologia/2020/03/24/aplicacion-madrid-coronavirus-oficial-comparte-datos-empresas/)
 
 ### Algorithme
 
-Haciendo un poco de "ingeniería inversa" me he topado con el enrevesado algoritmo para el que se ha necesitado la colaboración de, al menos, seis multinacionales (según consta en la propia web de la aplicación): Google, Telefónica, Goggo Network, Ferrovial, Carto, Forcemanager y Mendesaltren.
 
-El algoritmo es el siguiente:
+L'algorithme original en FR serait le suivant:
 
 ```javascript
 var scores = {
-  falta_aire: 60,
-  fiebre: 15,
-  tos: 15,
-  contacto_positivo: 29,
+  pb_respiratoire: 60,
+  fievre: 15,
+  toux: 15,
+  contact_positif: 29,
   mucosidad: 0,
-  dolor_muscular: 0,
+  doulour_musculaire: 0,
   gastrointestinal: 0,
-  mas_20_dias: -15
+  plus_de__20_jours: -15
 };
 var sc = 0;
 for (var k in answers) {
@@ -34,31 +28,30 @@ for (var k in answers) {
   }
 }
 if (sc >= 30) {
-  return 'con-sintomas';
+  return 'avec-symptomes';
 } else {
-  return 'sin-sintomas';
+  return 'sans-symtomes';
 }
 ```
 
-En la aplicación web de la Comunidad de Madrid te hacen 8 preguntas y le dan una puntuación a la respuesta positiva a cada una. Si tienes 30 puntos o más la aplicación te informará de que es posible que estés contagiado y de los pasos a seguir.
 
-Las preguntas, y sus puntuaciones por contestar con un "Sí", son las siguientes:
+Les questions et leurs ponctuations en cas de "Oui", sont les suivantes:
 
-- ¿Tienes sensación de falta de aire de inicio brusco (en ausencia de cualquier otra patología que justifique este síntoma)? **60 puntos**
-- ¿Tienes fiebre? (+37.7ºC) **15 puntos**
-- ¿Tienes tos seca y persistente? **15 puntos**
-- ¿Has tenido contacto estrecho con algún paciente positivo confirmado? **29 puntos**
-- ¿Tienes mucosidad en la nariz? **0 puntos**
-- ¿Tienes dolor muscular?: **0 puntos**
-- ¿Tienes sintomatología gastrointestinal? **0 puntos**
-- ¿Llevas más de 20 días con estos síntomas? **-15 puntos**
+- Avez-vous une sensation de manque de souffle d'origine brusque? (en absence d'une autre patologie qui justifierait ce symptome)? **60 points**
+- Avez-vous la fiebre? (+37.7ºC) **15 points**
+- Avez-vous une toux seche et persistante? **15 points**
+- Avez-vous été en contact avec un patien positif confirmé?  **29 points**
+- Avez-vous de la glaire dans le nez?  **0 points**
+- Avez-vous des douleurs musculaires? **0 points**
+- Avez-vous des problemes gastro intestinaux?  **0 points**
+- Avez-vous plus de 20 jours avec ces symptômes? **-15 points**
 
-¿Que cómo he podido encontrarlo? Así:
+Les explications sur comment cet algorithme fut retrouver se trouve ici:
 
 ![Imagen del complejo algoritmo que la aplicación de la Comunidad de Madrid envía en un JSON mediante una petición HTTP GET](public/ComplexAlgorithm.png)
 
-### Descargo de responsabilidad
+### Note informative et responsabilites
 
-La información proporcionada a través del uso de esta aplicación web no pretende, en ningún caso, sustituir el consejo de un profesional médico. Visto lo visto, la web anteriormente mencionada tampoco debería.
+Ce questionnaire a uniquement pour objectif de vous orienter en fonction de votre état de santé et des symptômes que vous déclarez. L’avis qu'il fournit n’a pas de valeur médicale. 
 
-Los datos que aquí se muestran sobre la aplicación de la Comunidad de Madrid han sido obtenidos el 21 de marzo de 2020.
+Les données de ce guide orientatif se base sur l'application de la Communaute de Madrid, Espagne en date du 21 mars 2020. 
