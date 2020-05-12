@@ -2,95 +2,81 @@
   <div class="results">
     <div class="margin-container"></div>
     <div v-if="filledInTest" class="main-container">
-      <h2>Resultados</h2>
+      <h2>Résultats</h2>
       <div v-if="hasSympthoms">
         <p>
-          Tus respuestas sugieren la posibilidad de tener sintomatología
-          compatible con COVID-19 según el algoritmo de coronamadrid.com.
+          Vos réponses suggèrent que vous avez la possibilité d'avoir des symptômes compatible avec le COVID-19 selon l'algorithme de coronamadrid.com.  
         </p>
         <p>
-          Algunas recomendaciones si crees que tienes COVID-19:
+          Quelques recommandations si vous pensez avoir le COVID-19:
         </p>
         <ul>
           <li>
-            Observa tu evolución y si tus síntomas empeoran, sobre todo si
-            tienes dificultad respiratoria, ponte en contacto con el teléfono
-            designado por tu Comunidad para la atención sobre el COVID-19 o con
-            tu centro de salud.
+            Surveillez votre évolution et si vos symptômes s'aggravent, surtout si
+            vous avez des difficultés respiratoires, contactez le téléphone
+            mis en place par votre ville/pays pour le suivi des soins pour COVID-19. 
           </li>
           <li>
-            Quédate en casa para evitar contagios.
+            Restez chez vous pour éviter des contagions.
           </li>
           <li>
-            Utiliza una mascarilla (continuamente y cambiándola cada 24 horas).
+            Utiliser un masque de protection (en prenant soin de les changer chaque 24h).
           </li>
           <li>
-            Si vives con otras personas, permanece en una habitación separada
-            con la puerta cerrada y utiliza un cuarto de baño propio si fuese
-            posible. Ventila la habitación evitando las corrientes hacia el
-            resto de la casa. No compartas vajilla, toallas ni sábanas.
+			Si vous vivez avec d'autres personnes, séjournez dans une pièce séparée avec la porte fermée et utilisez votre propre salle de bain dans la mesure du possible.
+			Aérez la pièce en évitant les courants vers le reste de la maison. Ne partagez pas la vaisselle, les serviettes ou les draps.
           </li>
           <li>
-            Limpia las superficies y objetos con lejía o productos
-            desinfectantes.
+            Nettoyer les surfaces et objets avec eau de Javel ou des produits désinfectants. 
           </li>
           <li>
-            Guarda la ropa sucia en una bolsa cerrada y lávala por separado a
-            60-90º.
+            Gardez vos  vêtements sales dans un sac fermé et les laver séparément avec les températures entre 60-90º. 
           </li>
           <li>
-            Elimina tus residuos por separado utilizando un cubo con tapa.
+            Jetez vos déchets séparément à l'aide d'un contenant avec un couvercle.
           </li>
         </ul>
         <p>
-          El COVID-19 se transmite por gotas que se expulsan al toser o
-          estornudar, por eso la higiene y evitar el contacto es vital para
-          reducir el contagio.
-        </p>
+         COVID-19 se transmet par des gouttelettes qui sont expulsées par la toux ou éternuements, donc l’hygiène et l’évitement des contacts par des gestes barrières sont fondamentaux pour réduire la contagion. </p>
       </div>
       <div v-else>
         <p>
-          Tus respuestas sugieren que no tienes síntomas o no son suficientes
-          para determinar un contagio de COVID-19 según el algoritmo de
-          coronamadrid.com.
+          Vos réponses suggèrent que vous n'avez pas des symptômes ou sont insuffisants pour déterminer une contagion au COVID-19 selon l'algorithme de coronamadrid.com.  
         </p>
       </div>
       <info-panel
-        text="Recuerda que la información obtenida a través del uso de esta
-          aplicación no sustituye ni pretende sustituir, en ningún caso, el
-          consejo de un profesional médico. Si crees que tienes síntomas
-          compatibles con el COVID-19 ponte en contacto con el teléfono
-          correspondiente a tu Comunidad o con el de tu centro de salud."
+        text="L'information obtenue via ce questionnaire ne remplace pas ni pretend substituer en aucun cas, 
+		l'avis d'un medecin. Si tu penses avoir des symptômes compatibles avec le COVID-19, 
+		entre en contact avec le numero vert de ta ville ou ton pays."
       ></info-panel>
-      <h3>Algunos enlaces de interés</h3>
+      <h3>Quelques liens utiles</h3>
       <a
-        href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/home.htm"
+        href="https://www.gouvernement.fr/info-coronavirus"
         target="_blank"
       >
-        Web del Gobierno de España con información sobre el COVID-19
+        Web del Gouvernement Francais avec des informations sur le COVID-19
       </a>
       <br /><br />
       <a
-        href="https://www.comunidad.madrid/servicios/salud/2019-nuevo-coronavirus"
+        href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/reponses-a-vos-questions-sur-le-covid-19-par-des-medecins"
         target="_blank"
       >
-        Web de la Comunidad de Madrid con información sobre el COVID-19
+        FAQ sur le COVID-19
       </a>
       <br /><br />
       <a
-        href="https://www.comunidad.madrid/servicios/salud/covid-19-prevencion-consejos-ciudadania#videos"
+        href="https://www.minsante.cm/site/?q=fr/epid-mie-de-coronavirus-covid---19-"
         target="_blank"
       >
-        Vídeos de la Comunidad de Madrid con consejos y recomendaciones para
-        evitar la transmisión en la convivencia con una persona con síntomas
+        Informations du Ministere de la Sante au Cameroun sur la situation du COVID-19
       </a>
       <br /><br />
-      <a href="https://www.who.int/health-topics/coronavirus" target="_blank">
-        Web de la Organización Mundial de la Salud para el Coronavirus
+      <a href="https://www.who.int/fr/health-topics/coronavirus/coronavirus" target="_blank">
+        Web de l'Organisation Mondiale de la Santé sur le Coronavirus
       </a>
       <div>
         <router-link to="/test">
-          <button>Volver a realizar el test</button>
+          <button>Refaire le test</button>
         </router-link>
       </div>
     </div>
