@@ -1,8 +1,8 @@
 # Open COVID19 Test en FR
 
-Un test d'auto evaluation pour le COVID-19 en open source qui donnent les memes resultats que le site [coronamadrid.com](https://www.coronamadrid.com/) sans conserver tes precieux donnees personnelles.
+Un test d'auto evaluation pour le COVID-19 en open source qui donnent les memes resultats que le site [coronamadrid.com](https://www.coronamadrid.com/) sans conserver tes precieux donnees personnelles. La version en FR ici http://linkedvocabs.org/open-covid19-test/ 
 
-Version originale en Castellan: https://celiavelmar.github.io/open-covid19-test/
+Version originale en Castellan (ESP): https://celiavelmar.github.io/open-covid19-test/
 
 
 ### Algorithme
