@@ -50,8 +50,8 @@ Les explications sur comment cet algorithme fut retrouvé se trouve ici car init
 
 ![Imagen del complejo algoritmo que la aplicación de la Comunidad de Madrid envía en un JSON mediante una petición HTTP GET](public/ComplexAlgorithm.png)
 
-### Note informative et responsabilites
+### Note informative et responsabilités
 
 Ce questionnaire a uniquement pour objectif de vous orienter en fonction de votre état de santé et des symptômes que vous déclarez. L’avis qu'il fournit n’a pas de valeur médicale. 
 
-Les données de ce guide orientatif se base sur l'application de la Communaute de Madrid, Espagne en date du 21 mars 2020. 
+Les données de ce guide orientatif se base sur l'application de la Communauté de Madrid, Espagne en date du 21 mars 2020. 
