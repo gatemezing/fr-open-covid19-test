@@ -46,7 +46,7 @@ Les questions et leurs ponctuations en cas de "Oui", sont les suivantes:
 - Avez-vous des problemes gastro intestinaux?  **0 points**
 - Avez-vous plus de 20 jours avec ces symptômes? **-15 points**
 
-Les explications sur comment cet algorithme fut retrouver se trouve ici:
+Les explications sur comment cet algorithme fut retrouvé se trouve ici car initialement pas open source:
 
 ![Imagen del complejo algoritmo que la aplicación de la Comunidad de Madrid envía en un JSON mediante una petición HTTP GET](public/ComplexAlgorithm.png)
 
